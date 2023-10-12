@@ -1,0 +1,12 @@
+node_modules/
+/target/
+.DS_Store
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+dist/
+lib/
+.vscode/
+.idea/
+*.min.js
