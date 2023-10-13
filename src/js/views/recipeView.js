@@ -1,7 +1,7 @@
 import { view } from './view';
 
 import icons from 'url:../../img/icons.svg';
-import { Fraction } from 'fractional';
+import Fraction from 'fraction.js';
 
 const recipeView = function () {
   view.call(this);
@@ -110,7 +110,7 @@ recipeView.prototype.generateMarkup = function () {
               <use href="${icons}#icon-check"></use>
             </svg>
             <div class="recipe__quantity">${
-              ele.quantity ? new Fraction(ele.quantity).toString() : ''
+              ele.quantity ? new Fraction(ele.quantity).toFraction() : ''
             }</div>
             <div class="recipe__description">
               <span class="recipe__unit">${ele.unit}</span>
